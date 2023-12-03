@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0819fb47c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Nikhil-logo (3).png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Sai Nikhil</span></h1>
+            </div>
+        </div>
+    </div>
+<!---------------------About----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"></div>
+                <img src="Images/user-design-3.png" alt="">
+                <div class="about-col-2">
+                    <h1 class="'subtitle">About Me</h1>
+                    <br>
+                    <p>As a third-year Computer Science Engineering student, I am passionate about exploring the dynamic realms of technology,
+                    specializing in Full Stack Web Development and Machine Learning. Proficient in crafting responsive web applications
+                    using HTML, CSS, and JavaScript, alongside frameworks like React, my expertise extends to server-side development with
+                    Node.js and Express. I thrive on creative problem-solving, evident in my practical application of machine learning
+                    algorithms for tasks such as spam email detection and healthcare data analysis using Python and relevant libraries.
+                    Beyond technical prowess, I've demonstrated leadership by spearheading development teams and contributing to projects
+                    that demand a blend of innovation and technical acumen. Eager to delve deeper into the complexities of technology, I am
+                    excited about the opportunities the third year holds for expanding my knowledge and making meaningful contributions at
+                    the intersection of innovation and computer science.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Machine Learning,Deep Learning, Neural Networks, Natural Language Processing</li>
+                                <li><span>Full Stack Web Development</span><br>HTML, CSS, Javascript, React.js, Nodejs, Express.js</li>
+                                <li><span>Problem Solving</span><br>C/C++, Java, Python</li>
+                                <li><span>Design</span><br>Canva, Adobe Illustrator</li>
+                                <li><span>Database Management</span><br>SQL, MongoDB, PostGreSQL</li>
+                                <li><span>Cloud</span><br>Amazon Web Services Cloud</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>CodSoft</span><br>Machine Learning Intern</li>
+                                <li><span>Microsoft Innovations Club, VITC</span><br>Designer</li>
+                                <li><span>CultureIT Club, VITC</span><br>Designer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017-2019</span><br>HSC at DAV Chennai</li>
+                                <li><span>2019-2021</span><br>SSC at DAV Chennai</li>
+                                <li><span>2021-2025</span><br>B.Tech from VIT Chennai</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------servives----------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Machine Learning</h2>
+                    <p>In Machine Learning, I provide expertise in developing and implementing advanced algorithms for regression,
+                    classification, and clustering. Proficient in Python and popular libraries, I excel in data preprocessing and feature
+                    engineering. My skills extend to tackling complex challenges like spam email detection using natural language
+                    processing. With a focus on ensemble methods and deep learning, I deliver impactful solutions for diverse problem
+                    domains.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Development</h2>
+                    <p>In Web Development, I offer a versatile skill set, specializing in crafting responsive and dynamic applications using
+                    HTML, CSS, and JavaScript. Proficient in frameworks like React, I ensure an engaging user experience. My expertise
+                    extends to server-side development with Node.js and Express. From creating visually appealing interfaces to optimizing
+                    backend functionality, I deliver comprehensive web solutions tailored to meet diverse needs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p>In Graphic Design, I bring a creative flair and technical proficiency to deliver visually stunning and effective
+                    solutions. Proficient in industry-standard tools like Adobe Creative Suite, I specialize in designing impactful visual
+                    assets, including posters, banners, and digital media. My expertise extends to translating concepts into compelling
+                    visual narratives, ensuring a harmonious blend of aesthetics and communication. Whether it's creating brand identities
+                    or engaging marketing collateral, my graphic design services are dedicated to capturing attention and conveying messages
+                    with artistic precision.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------Portfolio------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/email-spam.png" alt="" height="400px" width="650px">
+                    <div class="layer">
+                        <h3>Email-Spam Detection</h3>
+                        <p>The ML model detects the Spam Mails.</p>
+                        <a href="https://spamdetector-drbyi26asifzhrq4ue9tbj.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/credit-card.jpg" alt="" height="400px" width="650px">
+                    <div class="layer">
+                        <h3>Credit Card Fraud Detection</h3>
+                        <p>The ML model classifies a credit-card transaction as safe or fraud.</p>
+                        <a href="https://github.com/SaiNikhil26/Creditcard-fraud-detection" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/co2.jpeg" alt="" height="400px" width="650px">
+                    <div class="layer">
+                        <h3>CO-2 Amount Prediction</h3>
+                        <p>The ML model detects the amount of CO2 present in the air.</p>
+                        <a href="https://github.com/SaiNikhil26/Rwanda-CO2" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images\1012315-hospital.jpg" alt="" height="400px" width="650px">
+                    <div class="layer">
+                        <h3>Hospital Management System</h3>
+                        <p>Advanced Web Application for Hospital Management</p>
+                        <a href="https://hospitalmanagementsystem-o84d.onrender.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/SaiNikhil26" class="btn" target="_blank">See More</a>
+        </div>
+    </div>
+
+<!-----------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Conact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sai2642004@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6369903539</p>
+                <div class="social-icon">
+                    <a href="https://instagram.com/_nikhil.2644_?utm_source=qr&igshid=OGIxMTE0OTdkZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sainikhil26/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Images\Updated Nikhil-Resume (2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sai Nikhil</p>
+    </div>
+</div>
+
+    <script src="index.js" charset="UTF-8">
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdDs3E9FrLjHleoI1kJdTrpBYSnyZUMj-D4OjI_sB7Gu7ouw2j6zsK4OwDCl8_UQWz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully"
+    setTimeout(function(){msg.innerHTML = ""},5000)
+    form.reset()})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
